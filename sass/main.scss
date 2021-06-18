@@ -1,0 +1,17 @@
+$color-primary: #133B77;
+$color-primary-light: #0066FF;
+
+header {
+    padding: 10px;
+    
+    .header-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        &__left {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+}
