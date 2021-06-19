@@ -11,56 +11,126 @@
 </head>
 <body>
     <header>
-        <div class="header-box">
-            <div class="header-box__left">
-                <div class="header-box__logo">
-                    <img src="./img/logo.png" alt="USAinUA-logo" class="header-box__logo-img">
+        <div class="header-wrapper">
+            <div class="header-box">
+                <div class="header-box__left">
+                    <div class="header-box__logo">
+                        <a href="index.html"><img src="./img/logo.png" alt="USAinUA-logo" class="header-box__logo-img"></a>
+                    </div>
+                    <div class="header-box__menu">
+                        <ul class="header-box__menu-list">
+                            <li class="header-box__menu-list-item"><a href="#">О нас</a></li>
+                            <li class="header-box__menu-list-item"><a href="#">Инструкция</a></li>
+                            <li class="header-box__menu-list-item"><a href="#">Тарифы и калькулятор</a></li>
+                            <li class="header-box__menu-list-item"><a href="#">Магазины</a></li>
+                            <li class="header-box__menu-list-item"><a href="#">Отследить посылку</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="header-box__menu">
-                    <ul class="header-box__menu-list">
-                        <li class="header-box__menu-list-item"><a href="#">О нас</a></li>
-                        <li class="header-box__menu-list-item"><a href="#">Инструкция</a></li>
-                        <li class="header-box__menu-list-item"><a href="#">Тарифы и калькулятор</a></li>
-                        <li class="header-box__menu-list-item"><a href="#">Магазины</a></li>
-                        <li class="header-box__menu-list-item"><a href="#">Отследить посылку</a></li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="header-box__right">
-                <div class="header-box__phone">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="20" viewBox="0 0 13 20" fill="none">
-                        <rect x="0.999939" y="1" width="11" height="18" rx="3" stroke="#133B77" stroke-width="1.5"/>
-                    </svg>
-                    <a href="tel:0800 330 317" class="header-box__phone-number">0800 330 317</a>
-                    <button class="header-box__phone-btn">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="5" height="4" viewBox="0 0 5 4" fill="none" class="header-box__phone-arrow">
-                            <path d="M2.49994 4L0.334875 0.25L4.665 0.25L2.49994 4Z" fill="#133B77"/>
+                
+                <div class="header-box__right">
+                    <div class="header-box__phone">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="20" viewBox="0 0 13 20" fill="none">
+                            <rect x="0.999939" y="1" width="11" height="18" rx="3" stroke="#133B77" stroke-width="1.5"/>
                         </svg>
-                    </button>
-                </div>
-                <div class="header-box__account">
-                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12.8949 14H11.4763C11.4763 11.6068 9.46903 9.66053 6.99999 9.66053C4.53094 9.66053 2.52436 11.6075 2.52436 14H1.10577C1.10577 10.8238 3.75072 8.24194 7.0007 8.24194C10.25 8.24194 12.8949 10.8238 12.8949 14Z" fill="#133B77"></path>
-                        <path d="M7.00069 7.78093C4.8565 7.78093 3.11093 6.03465 3.11093 3.89047C3.11022 1.74557 4.85579 0 7.00069 0C9.1463 0 10.8919 1.74486 10.8919 3.89047C10.8919 6.03607 9.1463 7.78093 7.00069 7.78093ZM7.00069 1.41858C5.63743 1.41858 4.52881 2.52721 4.52881 3.89047C4.52881 5.25372 5.63743 6.36235 7.00069 6.36235C8.36466 6.36235 9.47328 5.25372 9.47328 3.89047C9.47328 2.52721 8.36324 1.41858 7.00069 1.41858Z" fill="#133B77"></path>
-                    </svg>
-                    <a href="#" class="header-box__account-link">Вход</a>
-                </div>
-                <div class="header-box__make-order">
-                    <button id="make-order-btn" class="header-box__make-order-btn" type="button">
-                        Заказать доставку
-                    </button>
-                </div>
-                <div class="header-box__lang">
-                    <p class="header-box__lang-ru">RU</p>
-                    <button class="header-box__lang-btn">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="5" height="4" viewBox="0 0 5 4" fill="none">
-                            <path d="M2.49994 4L0.334875 0.25L4.665 0.25L2.49994 4Z" fill="#133B77"/>
+                        <a href="tel:0800 330 317" class="header-box__phone-number">0800 330 317</a>
+                        <button class="header-box__phone-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="5" height="4" viewBox="0 0 5 4" fill="none" class="header-box__phone-arrow">
+                                <path d="M2.49994 4L0.334875 0.25L4.665 0.25L2.49994 4Z" fill="#133B77"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="header-box__account">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.8949 14H11.4763C11.4763 11.6068 9.46903 9.66053 6.99999 9.66053C4.53094 9.66053 2.52436 11.6075 2.52436 14H1.10577C1.10577 10.8238 3.75072 8.24194 7.0007 8.24194C10.25 8.24194 12.8949 10.8238 12.8949 14Z" fill="#133B77"></path>
+                            <path d="M7.00069 7.78093C4.8565 7.78093 3.11093 6.03465 3.11093 3.89047C3.11022 1.74557 4.85579 0 7.00069 0C9.1463 0 10.8919 1.74486 10.8919 3.89047C10.8919 6.03607 9.1463 7.78093 7.00069 7.78093ZM7.00069 1.41858C5.63743 1.41858 4.52881 2.52721 4.52881 3.89047C4.52881 5.25372 5.63743 6.36235 7.00069 6.36235C8.36466 6.36235 9.47328 5.25372 9.47328 3.89047C9.47328 2.52721 8.36324 1.41858 7.00069 1.41858Z" fill="#133B77"></path>
                         </svg>
-                    </button>
+                        <a href="#" class="header-box__account-link">Вход</a>
+                    </div>
+                    <div class="header-box__make-order">
+                        <button id="make-order-btn" class="header-box__make-order-btn green-button" type="button">
+                            Заказать доставку
+                        </button>
+                    </div>
+                    <div class="header-box__lang">
+                        <p class="header-box__lang-ru">RU</p>
+                        <button class="header-box__lang-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="5" height="4" viewBox="0 0 5 4" fill="none">
+                                <path d="M2.49994 4L0.334875 0.25L4.665 0.25L2.49994 4Z" fill="#133B77"/>
+                            </svg>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
+    
+    <div class="main-section">
+        <div class="main-section__container container">
+            <div class="main-section__content">
+                <div class="main-section__content-info">
+                    <h1 class="main-section__heading-primary-main heading-primary">
+                        Покупка и доставка товаров в США и Европе С нами 
+                        <span>легко</span>
+                    </h1>
+                    <h2 class="main-section__heading-secondary-subtitle heading-secondary">
+                        Гарантия самой низкой цены на услуги доставки
+                    </h2>
+                    <div class="main-section__order-delivery-block">
+                        <div class="icon-rectangle">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="25" viewBox="0 0 27 25" fill="none">
+                                <path d="M26.209 0.634766H7.17188C6.73502 0.634766 6.38086 0.98893 6.38086 1.42578V11.7608C5.32232 11.9422 4.34621 12.4821 3.63103 13.291H3.2168V12.5C3.2168 12.0631 2.86263 11.709 2.42578 11.709H0.791016C0.354164 11.709 0 12.0631 0 12.5C0 12.9369 0.354164 13.291 0.791016 13.291H1.63477V22.7832H0.791016C0.354164 22.7832 0 23.1374 0 23.5742C0 24.0111 0.354164 24.3652 0.791016 24.3652H2.42578C2.86263 24.3652 3.2168 24.0111 3.2168 23.5742V22.7832H3.88468C8.92941 24.3798 8.73877 24.3652 8.96484 24.3652H19.8281C21.4646 24.3652 22.6109 22.7401 22.0651 21.2012H26.209C26.6458 21.2012 27 20.847 27 20.4102V1.42578C27 0.98893 26.6458 0.634766 26.209 0.634766ZM15.082 2.2168H18.2461V6.17188H15.082V2.2168ZM20.6191 21.9922C20.6191 22.4284 20.2643 22.7832 19.8281 22.7832H9.08798C4.0433 21.1866 4.23394 21.2012 4.00781 21.2012H3.2168V14.873H4.00781C4.25904 14.873 4.49534 14.7537 4.64442 14.5515C5.89723 12.8528 8.44552 12.8515 9.69928 14.5515C9.84841 14.7537 10.0847 14.873 10.3359 14.873H14.291C14.7272 14.873 15.082 15.2279 15.082 15.6641C15.082 16.1002 14.7272 16.4551 14.291 16.4551H9.54492C9.10807 16.4551 8.75391 16.8092 8.75391 17.2461C8.75391 19.4269 10.5282 21.2012 12.709 21.2012H19.8281C20.2643 21.2012 20.6191 21.556 20.6191 21.9922ZM25.418 19.6191C24.9384 19.6191 13.3605 19.6191 12.709 19.6191C11.6777 19.6191 10.7979 18.9579 10.4715 18.0371H14.291C15.5995 18.0371 16.6641 16.9726 16.6641 15.6641C16.6641 14.3556 15.5995 13.291 14.291 13.291H10.7127C9.99759 12.4821 9.02143 11.9422 7.96289 11.7608V2.2168H13.5V6.96289C13.5 7.39974 13.8542 7.75391 14.291 7.75391H19.0371C19.474 7.75391 19.8281 7.39974 19.8281 6.96289V2.2168H25.418V19.6191Z" fill="#133B77"/>
+                            </svg>
+                        </div>
+                        <div class="text-rectangle">
+                            <p class="text-rectangle__text"><span class="text-rectangle__text-bold">Мы выкупаем</span> и доставляем Ваши товары</p>
+                            <button class="main-section__order-delivery-block-btn green-button">Рассчитать покупку и доставку</button>
+                        </div>
+                    </div>
+                    <div class="main-section__only-delivery-block">
+                        <div class="icon-rectangle">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
+                                <g clip-path="url(#clip0)">
+                                <path d="M20.364 19.6352L24.1296 17.4613C24.4659 17.2671 24.5811 16.8372 24.387 16.5008C24.1928 16.1645 23.7628 16.0492 23.4265 16.2435L19.6609 18.4174C19.3246 18.6116 19.2094 19.0416 19.4035 19.3779C19.5669 19.6609 19.9773 19.8586 20.364 19.6352Z" fill="#133B77"/>
+                                <path d="M27.135 10.7427L17.3515 5.09422C17.1339 4.96859 16.8659 4.96859 16.6484 5.09422L6.86493 10.7427C6.64738 10.8683 6.51337 11.1004 6.51337 11.3516V22.6484C6.51337 22.8996 6.64738 23.1318 6.86493 23.2573L16.6484 28.9058C16.7571 28.9686 16.8786 29 17 29C17.1214 29 17.2428 28.9686 17.3515 28.9058L27.135 23.2573C27.3525 23.1317 27.4866 22.8996 27.4866 22.6484V11.3516C27.4866 11.1004 27.3525 10.8682 27.135 10.7427ZM22.1196 9.47066L13.7423 14.3072L11.8875 13.2363L20.2647 8.3997L22.1196 9.47066ZM13.0392 15.525V17.6608L11.1817 16.5883L11.1835 14.4536L13.0392 15.525ZM17 6.515L18.8583 7.58792L10.4811 12.4245L8.62274 11.3516L17 6.515ZM16.2968 27.0791L7.91962 22.2425V12.5694L9.77788 13.6422L9.77521 16.9934C9.77502 17.2447 9.90904 17.4771 10.1268 17.6029L13.3908 19.4876C13.7569 19.6989 14.0871 19.4915 14.0939 19.4876C14.3115 19.362 14.4455 19.1299 14.4455 18.8787V16.337L16.2968 17.4059V27.0791ZM17 16.1881L15.1484 15.1192L23.5257 10.2826L25.3771 11.3516L17 16.1881ZM26.0803 22.2425L17.7031 27.0791V17.4059L26.0803 12.5694V22.2425Z" fill="#133B77"/>
+                                <path d="M23.4266 20.009L19.661 22.183C19.3247 22.3771 19.2094 22.8071 19.4036 23.1434C19.5688 23.4295 19.9799 23.6226 20.364 23.4008L24.1296 21.227C24.4659 21.0327 24.5812 20.6028 24.387 20.2665C24.1929 19.9302 23.7629 19.815 23.4266 20.009Z" fill="#133B77"/>
+                                </g>
+                                <circle cx="1" cy="5" r="1" fill="#133B77"/>
+                                <path d="M5 18L2 16" stroke="#133B77" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7 9L4 7" stroke="#133B77" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M13 4L8.5 1" stroke="#133B77" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <defs>
+                                <clipPath id="clip0">
+                                <rect width="24" height="24" fill="white" transform="translate(5 5)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="text-rectangle">
+                            <p class="text-rectangle__text"><span class="text-rectangle__text-bold">Получите ваш адрес в США</span> для самостоятельных покупок с нашей доставкой- Mail Forwarding.</p>
+                            <button class="main-section__order-delivery-block-btn white-button">Добавить купленную посылку</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main-section__content-img">
+                    <div class="main-section__img">
+                        <img src="./img/main-section-img.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="main-section__create-order">
+                <p class="main-section__create-order-text">Быстрая форма расчета покупки и доставки</p>
+                <form action="" class="main-section__create-order-form">
+                    <input type="link" placeholder="Вставьте ссылку на первый товар.">
+                    <button type="submit">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="11" viewBox="0 0 13 11" fill="none">
+                            <path d="M0.730743 4.48055L0.710451 4.48499H9.40946L6.67481 1.74431C6.5409 1.61051 6.46744 1.42925 6.46744 1.23901C6.46744 1.04876 6.5409 0.868769 6.67481 0.734648L7.10032 0.308924C7.23413 0.175119 7.41243 0.101135 7.60257 0.101135C7.79281 0.101135 7.97122 0.174591 8.10502 0.308395L12.7927 4.99569C12.9271 5.13002 13.0005 5.30896 13 5.49931C13.0005 5.69071 12.9271 5.86975 12.7927 6.00388L8.10502 10.6916C7.97122 10.8253 7.79292 10.8989 7.60257 10.8989C7.41243 10.8989 7.23413 10.8252 7.10032 10.6916L6.67481 10.2659C6.5409 10.1323 6.46744 9.95387 6.46744 9.76362C6.46744 9.57348 6.5409 9.40448 6.67481 9.27079L9.44032 6.51479H0.72102C0.329223 6.51479 -4.76837e-06 6.1771 -4.76837e-06 5.78552V5.1834C-4.76837e-06 4.79181 0.338947 4.48055 0.730743 4.48055Z" fill="#003225"/>
+                            </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

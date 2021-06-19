@@ -18,5 +18,6 @@
   "homepage": "https://github.com/npolysh/USAinUA#readme",
   "devDependencies": {
     "node-sass": "^6.0.0"
-  }
+  },
+  "dependencies": {}
 }

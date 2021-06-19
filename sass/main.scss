@@ -1,8 +1,10 @@
 $color-primary: #133B77;
 $color-primary-light: #0066FF;
 $default-font: 'Open sans';
-$button-active: #0FC494;
+$button-green-active: #0FC494;
+$buton-white-active: #fff;
 $button-active-font: #003225;
+$backgroung-color-grey: #F7F7F7;
 
 * {
     margin: 0;
@@ -21,8 +23,55 @@ body {
     }
 }
 
+button {
+    cursor: pointer;
+}
+
+button.green-button {
+    text-transform: uppercase;
+    border-radius: 27px;
+    font-family: $default-font;
+    font-size: 12px;
+    font-weight: 700;
+    color: $button-active-font;
+    letter-spacing: 0.5px;
+    background-color: $button-green-active;
+    border: none;
+    box-shadow: 0px 11px 19px -9px rgba(15, 196, 148, 0.56);
+    height: 42px;
+}
+
+button.white-button {
+    text-transform: uppercase;
+    border-radius: 27px;
+    font-family: $default-font;
+    font-size: 12px;
+    font-weight: 700;
+    color: $button-active-font;
+    letter-spacing: 0.5px;
+    background-color: $buton-white-active;
+    border: 3px solid rgba(15, 196, 148, 0.56);
+    height: 42px;
+}
+
+h1.heading-primary {
+    font-size: 42px;
+    font-weight: 800;
+}
+
+h2.heading-secondary {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 28px;
+}
+
 header {
     padding: 30px;
+
+    .header-wrapper {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
     
     .header-box {
         display: flex;
@@ -46,18 +95,25 @@ header {
         }
 
         &__menu {
+            max-width: 538px;
 
             &-list {
                 display: flex;
                 flex-direction: row;
+                width: 100%;
 
                 &-item {
                     list-style-type: none;
                     margin-right: 15px;
-                }
 
-                &-item:last-child {
-                    margin-right: 0;
+                    a:hover {
+                        text-shadow: 1px 0 0 #133b77;
+                        transition: 0.3s all;
+                    }
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
                 }
             }
         }
@@ -106,18 +162,7 @@ header {
             margin-right: 30px;
             
             &-btn {
-                background-color: $button-active;
-                text-transform: uppercase;
                 width: 183px;
-                height: 43px;
-                border-radius: 27px;
-                border: none;
-                box-shadow: 0px 11px 19px -9px rgba(15, 196, 148, 0.56);
-                font-family: $default-font;
-                font-size: 12px;
-                font-weight: 700;
-                color: $button-active-font;
-                letter-spacing: 0.5px;
             }
         }
 
@@ -131,6 +176,155 @@ header {
             &-btn {
                 border: none;
                 background-color: #fff;
+            }
+        }
+    }
+}
+
+.main-section {
+    .container {
+        max-width: 1240px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        margin-bottom: 25px;
+    }
+
+    &__heading-primary-main {
+        text-transform: uppercase;
+        max-width: 612px;
+        width: 100%;
+        margin-bottom: 11px;
+        line-height: 48px;
+
+        span {
+            color: $color-primary-light
+        };
+    }
+
+    &__heading-secondary-subtitle {
+        color: $color-primary-light;
+        max-width: 615px;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .icon-rectangle {
+        width: 45px;
+        background-color: #fff;
+        padding: 30px 10px;
+        border-radius: 13px;
+        text-align: center;
+        margin-right: 20px;
+    }
+
+    .text-rectangle {
+            
+        &__text {
+            margin-bottom: 10px;
+
+            &-bold {
+                font-weight: 600;
+            }
+        }
+    }
+
+    &__order-delivery-block {
+        width: 460px;
+        background-color: $backgroung-color-grey;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 8px 20px 8px 8px;
+        border-radius: 20px;
+        margin-bottom: 16px;
+
+        &-btn {
+            width: 367px;
+        }
+    }
+
+    &__only-delivery-block {
+        width: 453px;
+        background-color: $backgroung-color-grey;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 8px 20px 8px 8px;
+        border-radius: 20px;
+
+        &-btn {
+            width: 365px;
+        }
+    }
+
+    &__img {
+        width: 650px;
+
+        img {
+            width: 100%;
+        }
+    }
+    
+    &__create-order {
+        width: 100%;
+        border: 3px solid #F7F7F7;
+        border-radius: 12px;
+        padding: 25px 32px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        &-text {
+            font-size: 22px;
+            font-weight: 700;
+        }
+
+        &-form {
+            max-width: 550px;
+            width: 100%;
+            position: relative;
+
+            button {
+                background-color: $button-green-active;
+                border-radius: 50%;
+                width: 34px;
+                height: 34px;
+                border: none;
+                position: absolute;
+                right: 4px;
+                top: 3px;
+            }
+
+            input[type='link'] {
+                width: 100%;
+                background-color: $backgroung-color-grey;
+                height: 40px;
+                outline: none;
+                border: none;
+                border-radius: 20px;
+                padding: 0 19px;
+                color: $color-primary;
+                font-weight: 600;
+                font-size: 14px;
+            }
+
+            input[type='link']:focus::-webkit-input-placeholder {
+                color: $color-primary;
+                opacity: 0.2;
+                font-weight: 400;
+            }
+
+            input[type='link']::-webkit-input-placeholder {
+                color: $color-primary;
+                opacity: 0.5;
+                font-weight: 400;
             }
         }
     }
